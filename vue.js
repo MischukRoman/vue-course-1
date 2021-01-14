@@ -37,8 +37,7 @@ const App = {
         },
         nextOfFinish() {
             // кнопка вперед или закончить
-            /*if (this.selectStep >= this.stepsQty) this.activeIndex = 0;
-            else this.activeIndex++;*/
+
             this.activeIndex++;
         },
         setActive(idx) {
@@ -65,11 +64,6 @@ const App = {
         isShowResetButton() {
             return this.selectStep > this.stepsQty;
         }
-
-        // тут стоит определить несколько свойств:
-        // 1. текущий выбранный шаг
-        // 2. выключена ли кнопка назад
-        // 3. находимся ли мы на последнем шаге
     }
 };
 
